@@ -2,6 +2,7 @@
 import fibonacci from "./fib";
 
 export default (req, res) => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const { num } = req.params;
 
   const fibN = fibonacci(parseInt(num));
